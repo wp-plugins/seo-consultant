@@ -1,9 +1,7 @@
 <?php
 
 /**
- * Created by Konstantinos Tsatsarounos<konstantinos.tsatsarounos@gmail.com>
- * Date: 13/7/2015
- * File: BrokenLinkChecker.php
+ * Created by ketchupthemes.com
  */
 
 class BrokenLinkChecker

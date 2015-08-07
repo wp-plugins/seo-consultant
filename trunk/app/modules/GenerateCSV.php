@@ -1,9 +1,6 @@
 <?php
 /**
- * Created by Konstantinos Tsatsarounos<konstantinos.tsatsarounos@gmail.com>
- * Date: 1/8/2015
- * File: GenerateCSV.php
- * Description: ${CARET}
+ * Created by ketchupthemes.com
  */
 
 namespace SeoConsultant;

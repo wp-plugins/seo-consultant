@@ -1,6 +1,6 @@
 <?php
 /**
- * Created by Konstantinos Tsatsarounos<konstantinos.tsatsarounos@gmail.com>
+ * Created by ketchupthemes.com
  */
 
 namespace SeoConsultant;

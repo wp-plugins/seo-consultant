@@ -1,5 +1,5 @@
 /**
- * Created by NEOGEEK on 1/8/2015.
+ * Created by ketchupthemes.com
  */
 
 ;(function(){
