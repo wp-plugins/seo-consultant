@@ -1,4 +1,10 @@
 <?php
+/**
+ * Created by Konstantinos Tsatsarounos<konstantinos.tsatsarounos@gmail.com>
+ * Date: 29/7/2015
+ * File: ReferringPages.php
+ * Description: ${CARET}
+ */
 
 namespace SeoConsultant;
 

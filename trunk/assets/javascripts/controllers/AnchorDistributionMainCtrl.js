@@ -1,3 +1,7 @@
+/**
+ * Created by NEOGEEK on 1/8/2015.
+ */
+
 ;(function(){
 	//Do code
 	var AnchorDistributionMainCtrl = function($scope, $interval, asyncService){

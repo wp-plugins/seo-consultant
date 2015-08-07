@@ -1,4 +1,11 @@
 <?php
+/**
+ * Created by Konstantinos Tsatsarounos<konstantinos.tsatsarounos@gmail.com>
+ * Date: 16/7/2015
+ * File: RequestFilter.php
+ * Description: ${CARET}
+ */
+
 namespace SeoConsultant;
 
 

@@ -1,4 +1,11 @@
 <?php
+/**
+ * Created by Konstantinos Tsatsarounos<konstantinos.tsatsarounos@gmail.com>
+ * Date: 14/7/2015
+ * File: BlockedIps.php
+ * Description: ${CARET}
+ */
+
 namespace SeoConsultant;
 
 

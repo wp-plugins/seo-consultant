@@ -1,10 +1,10 @@
 <?php
 /**
  * Plugin Name: SEO Consultant
- * Plugin URI: http://ketchupthemes.com/seo-consultant
- * Description: The Ultimate WordPress SEO Tool For Backlinks Reporting and Off Page Analysis.
- * Author: Alex Itsios
- * Author URI: http://ketchupthemes.com/alex-itsios
+ * Plugin URI: http://www.infogeek.gr
+ * Description: An plugin which offers all the functionality to protect your website and make SEO a bit easier
+ * Author: Konstantinos Tsatsarounos
+ * Author URI: http://www.infogeek.gr
  * License: GPL-2.0+
  * License URI: http://www.gnu.org/licenses/gpl-2.0.txt
  * Network: true
@@ -50,7 +50,6 @@ if (!function_exists('seo_consultant_activation')) {
         $db = \SeoConsultant\Database::getInstance();
         $db->setupDatabase();
     }
-
     register_activation_hook(_SEOCONS_FILE, 'seo_consultant_activation');
 }
 
@@ -63,18 +62,18 @@ if (!function_exists('seo_block_unwanted_traffic')) {
         $is_data = $analyzer->analyzeReferer();
 
         if ($is_data) {
-            global $wpdb;
             $db = \SeoConsultant\Database::getInstance();
-            $blocked_referrers = $wpdb->get_results("SELECT DOMAIN_NAME FROM " . $db::$HOSTINDEX . " WHERE IS_BLOCKED='1'", ARRAY_A);
+            $blocked_referrers = $db->getAllDomains(array('is_blocked' => 1));
 
             $is_forbitten_header = false;
-            foreach ($blocked_referrers as $blocked_referrer) {
-                if (preg_match('/(' . $blocked_referrer['DOMAIN_NAME'] . ')/', $analyzer->referer['domain'])) {
-                    $is_forbitten_header = true;
+            if(!empty($blocked_referrers)) {
+                foreach ($blocked_referrers as $blocked_referrer) {
+                    if (preg_match('/(' . $blocked_referrer['DOMAIN_NAME'] . ')/', $analyzer->referer['domain'])) {
+                        $is_forbitten_header = true;
+                    }
                 }
             }
-            echo $is_forbitten_header;
-
+            
             if ($is_forbitten_header) {
                 header("Location: " . $_SERVER['HTTP_REFERER'], true, 303);
                 exit();
@@ -82,8 +81,6 @@ if (!function_exists('seo_block_unwanted_traffic')) {
                 ob_flush();
             }
         }
-
-
     }
 
     add_action('send_headers', 'seo_block_unwanted_traffic', 1);
@@ -103,7 +100,6 @@ if (!function_exists('seo_downloading_page')) {
 
                 //get type value
                 $type = (isset($_GET['type'])) ? filter_input(INPUT_GET, 'type', FILTER_SANITIZE_STRING) : false;
-                $supported = array('pdf', 'csv');
 
                 //redirect to the file generator responsible for the requested type, if type is not defined, redirects
                 //to the admin panel
@@ -120,7 +116,6 @@ if (!function_exists('seo_downloading_page')) {
             }
         }
     }
-
     add_action('init', 'seo_downloading_page', 1);
 }
 

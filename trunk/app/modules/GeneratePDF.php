@@ -1,4 +1,11 @@
 <?php
+/**
+ * Created by Konstantinos Tsatsarounos<konstantinos.tsatsarounos@gmail.com>
+ * Date: 2/8/2015
+ * File: GeneratePDF.php
+ * Description: ${CARET}
+ */
+
 namespace SeoConsultant;
 
 if (!defined('FPDF_VERSION')) {
