@@ -78,3 +78,5 @@ When you install the SEO Consultant plugin, the widgets will appear in your Word
 == Bugs and Issues ==
 
 Currently we noticed that SEO Consultant has a problem with the proper parsing of nofollow/dofollow links + Anchor Text Distribution (it shows empty). This is a bug that we're currently trying to fix. Any other bugs or suggestions can be made through our FB Group <https://www.facebook.com/groups/ifeedgr/>
+
+Also, if a site currently are based on an old server with much load, is possible to experience great latencies from the plugin. In this case deactivate it and report to us, via wordpress or facebook for help. The permanent solution is on the way!
