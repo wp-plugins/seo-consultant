@@ -1,10 +1,11 @@
 <?php
 /**
  * Plugin Name: SEO Consultant
- * Plugin URI: http://www.infogeek.gr
- * Description: An plugin which offers all the functionality to protect your website and make SEO a bit easier
- * Author: Konstantinos Tsatsarounos
- * Author URI: http://www.infogeek.gr
+ * Plugin URI: http://ketchupthemes.com/seo-consultant
+ * Description: A plugin which offers all the functionality to protect your website and make SEO a bit easier.
+ * Version 1.1
+ * Author: Alex Itsios
+ * Author URI: http://www.ketchupthemes.com
  * License: GPL-2.0+
  * License URI: http://www.gnu.org/licenses/gpl-2.0.txt
  * Network: true

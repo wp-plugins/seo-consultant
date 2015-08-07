@@ -1,7 +1,6 @@
 /**
- * Created by NEOGEEK on 30/7/2015.
+ * Created by ketchupthemes.com
  */
-
 ;
 (function () {
     //Do code

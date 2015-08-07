@@ -1,7 +1,7 @@
 <?php
 
 /**
- * Created by Konstantinos Tsatsarounos<konstantinos.tsatsarounos@gmail.com>
+ * Created by ketchupthemes.com
  */
 
 require_once 'AutoLoader.php';

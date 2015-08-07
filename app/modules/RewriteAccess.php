@@ -1,9 +1,6 @@
 <?php
 /**
- * Created by Konstantinos Tsatsarounos<konstantinos.tsatsarounos@gmail.com>
- * Date: 29/7/2015
- * File: RewriteAccess.php
- * Description: ${CARET}
+ * Created by ketchupthemes.com
  */
 
 namespace SeoConsultant;

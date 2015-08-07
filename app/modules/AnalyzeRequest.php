@@ -1,10 +1,7 @@
 <?php
 
 /**
- * Created by Konstantinos Tsatsarounos<konstantinos.tsatsarounos@gmail.com>
- * Date: 14/7/2015
- * File: AnalyzeRequest.php
- * Description: ${CARET}
+ * Created by ketchupthemes.com
  */
 namespace SeoConsultant;
 

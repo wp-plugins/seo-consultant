@@ -1,9 +1,6 @@
 <?php
 /**
- * Created by Konstantinos Tsatsarounos<konstantinos.tsatsarounos@gmail.com>
- * Date: 14/7/2015
- * File: Settings.php
- * Description: ${CARET}
+ * Created by ketchupthemes.com
  */
 
 namespace SeoConsultant;
