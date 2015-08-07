@@ -3,7 +3,7 @@
 Plugin Name: SEO Consultant
 Plugin URI: http://ketchupthemes.com/seo-consultant
 Description: A plugin which offers all the functionality to protect your website and make SEO a bit easier.
-Version: 1.1.1
+Version: 1.1.2
 Author: Alex Itsios
 Author URI: http://www.ketchupthemes.com
 License: GPL-2.0+
