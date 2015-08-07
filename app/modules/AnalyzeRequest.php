@@ -30,7 +30,7 @@ class AnalyzeRequest
         $this->user_ip = $this->assign_value('REMOTE_ADDR');
         $this->referer = $this->assign_value('HTTP_REFERER');
         $this->https = $this->assign_value('HTTPS');
-        $this->headers = getallheaders();
+        $this->headers = \getallheaders();
     }
 
     public static function getInstance()
