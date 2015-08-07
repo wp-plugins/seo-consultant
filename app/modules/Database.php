@@ -1,4 +1,8 @@
 <?php
+
+/**
+ * Created by Konstantinos Tsatsarounos<konstantinos.tsatsarounos@gmail.com>
+ */
 namespace SeoConsultant;
 
 class Database
@@ -116,6 +120,13 @@ class Database
         return $wpdb->get_results( $this->prepare("SELECT DISTINCT idx.ID,idx.DOMAIN_NAME,idx.IP,count(DISTINCT(log.REF_LINK)) AS OCCURS FROM ".self::$HOSTINDEX." idx JOIN ".self::$HOSTLOG." log on idx.ID=log.DOMAIN_ID WHERE IS_BLOCKED=%d AND IGNORED=0 GROUP BY DOMAIN_NAME", array((int) $filter['is_blocked'])),ARRAY_A);
     }
 
+    //This function doesn't care the domain having links to display it!
+    public function getAllDomains($filter = false){
+        global $wpdb;
+        $filter = ($filter) ? $filter : array('is_blocked' => 0);
+        $wpdb->get_results( $this->prepare("SELECT DOMAIN_NAME FROM " . self::$HOSTINDEX . " WHERE IS_BLOCKED='%d'",array((int) $filter['is_blocked'])), ARRAY_A);
+    }
+
 
     /**
      * @param $filter
@@ -156,7 +167,7 @@ class Database
     public function getIndexInIgnoredList(array $ignored_list){
         if(!empty($ignored_list)){
             global $wpdb;
-            $ignoredregexp = implode('|', $ignored_list);
+            $ignoredregexp = strtolower(implode('|', $ignored_list));
             return $wpdb->get_results("SELECT ID from " . self::$HOSTINDEX . " where DOMAIN_NAME REGEXP '$ignoredregexp' AND IGNORED=0;", ARRAY_A);
         }
         return false;

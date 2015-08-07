@@ -1,4 +1,8 @@
 <?php
+/**
+ * Created by Konstantinos Tsatsarounos<konstantinos.tsatsarounos@gmail.com>
+ */
+
 namespace SeoConsultant;
 
 class Dashboard

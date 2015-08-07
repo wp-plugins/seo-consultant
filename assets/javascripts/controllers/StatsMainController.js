@@ -1,3 +1,8 @@
+/**
+ * Created by NEOGEEK on 30/7/2015.
+ */
+
+
 ;(function(){
 	//Do code
 	var StatsMainCtrl = function($scope, $interval, asyncService){

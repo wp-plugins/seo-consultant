@@ -1,4 +1,10 @@
 <?php
+/**
+ * Created by Konstantinos Tsatsarounos<konstantinos.tsatsarounos@gmail.com>
+ * Date: 31/7/2015
+ * File: CheckLink.php
+ * Description: ${CARET}
+ */
 
 namespace SeoConsultant;
 

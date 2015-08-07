@@ -1,6 +1,6 @@
 === SEO Consultant ===
 
-Contributors: alexitsios, konstantinos_tsatsarounos
+Contributors: alexitsios, Konstantinos_Tsatsarounos
 Tags: seo, backlinks , seo monitor, seo analysis
 Requires at least: 4.0
 Tested up to: 4.2.3

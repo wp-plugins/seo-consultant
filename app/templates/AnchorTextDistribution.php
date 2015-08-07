@@ -1,4 +1,11 @@
 <?php
+/**
+ * Created by Konstantinos Tsatsarounos<konstantinos.tsatsarounos@gmail.com>
+ * Date: 1/8/2015
+ * File: AnchorTextDistribution.php
+ * Description: ${CARET}
+ */
+
 namespace SeoConsultant;
 
 

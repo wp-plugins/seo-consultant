@@ -1,5 +1,12 @@
 <?php
+
+/**
+ * Created by Konstantinos Tsatsarounos<konstantinos.tsatsarounos@gmail.com>
+ */
+
 require_once 'AutoLoader.php';
+
+
 class SeoConsultant
 {
     const VERSION = 0.96;
@@ -65,7 +72,8 @@ class SeoConsultant
 
         //Enqueue Scripts and Stylesheets
         add_action('admin_enqueue_scripts', array($this, 'loadStylesheets'), 1 );
-        add_action('admin_enqueue_scripts', array($this, 'loadScripts'), 1 );
+
+        add_action( 'current_screen', array($this, 'do_in_screen'),1);
 
         //Initialize Ajax Handler
         add_action('wp_ajax_seocons_handle_request', array($this, 'handleAjaxRequest'));
@@ -181,6 +189,14 @@ class SeoConsultant
 
     }
 
+    public function do_in_screen(){
+        $current_screen = get_current_screen();
+
+        if($current_screen->base === 'dashboard'){
+            add_action('admin_enqueue_scripts', array($this, 'loadScripts'), 1);
+        }
+    }
+
     /**
      * Helper method for logging potential problematic outputs
      *
@@ -234,6 +250,8 @@ class SeoConsultant
             'request_denial' => __('You think, it\'s going to be easy! No! no! no!, Mon\'Amie')
         );
     }
+
+
 
 
 
