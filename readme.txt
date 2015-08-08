@@ -60,6 +60,7 @@ When you install the SEO Consultant plugin, the widgets will appear in your Word
 2. Referring Pages dashboard widget.
 3. Block Referring Domains dashboard widget
 4. Anchor Distribution
+5. SEO Stats
 
 == Changelog ==
 
