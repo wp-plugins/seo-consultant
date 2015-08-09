@@ -2,7 +2,7 @@
 /*
 Plugin Name: SEO Consultant
 Plugin URI: http://ketchupthemes.com/seo-consultant
-Description: A plugin which offers all the functionality to protect your website and make SEO a bit easier.
+Description: The Ultimate WordPress SEO Tool For Backlinks Reporting and Off Page Analysis.
 Version: 1.1.3
 Author: Alex Itsios
 Author URI: http://www.ketchupthemes.com
