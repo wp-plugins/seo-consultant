@@ -86,7 +86,7 @@ class SeoConsultant
 
         //Enable dashboard widgets if the option is active
         //The option is in Settings page, The "Enable Widgets" option
-        if( get_option('enable-widgets', false) && $this->authorization){
+        if( !get_option('disable-widgets', false) && $this->authorization){
             $this->addDashboardWidgets();
         }
 

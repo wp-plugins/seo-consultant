@@ -22,7 +22,7 @@ class Settings
         register_setting('seocons_settings', 'check-links');
         register_setting('seocons_settings', 'enable-htaccess-auto-rewrite');
         register_setting('seocons_settings', 'check-live-link');
-        register_setting('seocons_settings', 'enable-widgets');
+        register_setting('seocons_settings', 'disable-widgets');
     }
 
     public static function pageTemplate(){
@@ -57,8 +57,8 @@ class Settings
 
 
                     <fieldset>
-                        <label><?php _e('Enable Widgets', _SEOCONS_TEXTDOMAIN) ?></label>
-                        <input type="checkbox" name="enable-widgets" value="1" <?php checked( get_option('enable-widgets', false), true, true); ?>>
+                        <label><?php _e('Disable Widgets', _SEOCONS_TEXTDOMAIN) ?></label>
+                        <input type="checkbox" name="disable-widgets" value="1" <?php checked( get_option('disable-widgets', false), true, true); ?>>
                     </fieldset>
 
 
